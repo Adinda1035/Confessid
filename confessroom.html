@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Room</title>
+    <style>
+        body{
+            background-image: url(bg.jpg);
+        }
+        .atasan{
+            background-color: teal;
+            margin-left: -8px;
+            margin-right: -8px;
+            margin-top: -19px;
+        }
+        #logo, #slogan{
+            text-align: center;
+            color: white;
+        }
+        #logo{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input{
+            width: 500px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: #bbbbbb;
+        }
+        input[type='textbox']{
+            height: 500px;
+        }
+        fieldset{
+            width: 510px;
+            margin-left: 28%;
+            background-color: #bedbbb;
+            border-color: #bedbbb transparent;
+            border-radius: 5px;
+            box-shadow: 0px;
+        }
+        legend{
+            text-align: center;
+            background-color: #839b97;
+            color:white;
+        }
+        table{
+            margin-left: 30%;
+            width: 500px;
+        }
+        tr, td{
+            background-color: #bbbbbb;
+            padding: 15px;
+        }
+        table, tr, td{
+            border: 1px solid black;
+        }
+        .judul{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #839b97;
+        }
+        .keluar{
+            margin-left: 45%;
+        }
+    </style>
+    <script src="isi.js"></script>
+</head>
+<body>
+    <div class="atasan">
+        <h3 id="logo">Confessid <img src="bubble.png" alt="" width="2%"></h3>
+        <h5 id="slogan">Kamu tidak sendiri, kami akan mendengar keluh kesahmu</h5>
+    </div>
+    <form name="curhat" method="post" action="confessroom.html">
+        <fieldset class="form">
+            <legend>Isi Yukkk</legend>
+            <input type="text" id="nama" placeholder="Nama Asli/Nama Samaran" name="nama" >
+            <br>
+            <br>
+            <input type="textbox" placeholder="Utarakan isi hatimu disini" name="isi">
+            <br>
+            <br>
+            <input type="button" value="Kirim" id="kirim" onclick="terimaInput()">
+        </fieldset>
+    </form>
+    <br><br><br>
+    <table border="1px" id="tabelInput">
+        <tr>
+            <td>Nama</td>
+            <td>Keluhan</td>
+        </tr>
+    </table>
+    <br><br><br>
+    <a href="home.html" class="keluar"><img src="logout.png" alt="" width="2%">Keluar</a>
+
+    
+</body>
+</html>
